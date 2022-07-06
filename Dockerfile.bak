@@ -1,6 +1,7 @@
-ARG GOVERSION=1.18
+ARG GO_VERSION=1.18
 ARG GOARCH
 ARG GOARCH=amd64
+
 FROM golang:${GO_VERSION} as build
 
 WORKDIR /go/src/sigs.k8s.io/prometheus-adapter
